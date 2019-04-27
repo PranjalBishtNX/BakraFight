@@ -6,6 +6,9 @@ if(obj_UIController.Health1>10){
 	if(fb != noone) instance_destroy(fb)
 	
 	instance_create_layer(tX, y, "UI_Feedback", obj_SelectFeedback)	
+	fb = instance_create_layer(tX, y, "UI_Feedback", obj_SelectFeedback2)
+	fb.iconType = pos;
+	
 }
 
 

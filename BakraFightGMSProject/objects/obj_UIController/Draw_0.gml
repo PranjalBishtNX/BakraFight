@@ -1,10 +1,10 @@
-draw_sprite(UI_HPBarHolder, 0, 32, 32);
+draw_sprite(UI_HPBarBack, 0, 0, 16);
+draw_sprite_ext(UI_HPBarExtend, 0, 60, 16, Health1/100, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
+draw_sprite(UI_HPBarTop, 0, 0, 16);
 
-draw_sprite_ext(UI_HPBarHolder, 0, room_width-32, 32, -1, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
-
-draw_sprite_ext(UI_HPBarExtend, 0, 64, 32, 6*Health1/100, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
-
-draw_sprite_ext(UI_HPBarExtend, 0, room_width-64, 32, -6*Health2/100, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
+draw_sprite_ext(UI_HPBarBack, 0, room_width,16, -1, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
+draw_sprite_ext(UI_HPBarExtend, 0, room_width-60, 16, -Health2/100, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
+draw_sprite_ext(UI_HPBarTop, 0, room_width, 16, -1, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
 
 //p1count = p1Stats[0] +  p1Stats[1] + p1Stats[2]
 //p2count = p2Stats[0] +  p2Stats[1] + p2Stats[2]

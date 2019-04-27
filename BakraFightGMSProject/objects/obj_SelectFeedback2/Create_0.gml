@@ -1,0 +1,1 @@
+iconType = 0;
