@@ -5,10 +5,10 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(ord("W"));
 key_attack = keyboard_check_pressed(vk_space);
 
-
+move=0
 //move
 if(state!="attack"){
-	var move = key_right - key_left;
+	move = key_right - key_left;
 
 	if(move == 1)  image_xscale = scale
 	else if(move == -1) image_xscale = -scale
@@ -22,6 +22,7 @@ if (place_meeting(x,y+1,obj_ground)) && (key_jump) && state != "attack"
 {	
 	state = "jump"
 	vmov = -jmpHt //jump height
+
 
 }
 
@@ -81,7 +82,18 @@ x = x + hmov;
 
 
 
+if(move!=0 && state == "normal" && state!= "jump" && state!="attack")
+{
+	sprite_index = spr_playergoat_run;
 
+	
+}
+
+if(move==0 && state == "normal")
+{
+	sprite_index = spr_playergoat;
+	image_speed = 1;
+}
 obj_UIController.Health1 = hp
 
 
