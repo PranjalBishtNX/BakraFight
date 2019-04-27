@@ -1,4 +1,4 @@
-if(Health2>10){
-	Health2-= 10;
-	p2Stats[pos]++
+if(obj_UIController.Health2>10){
+	obj_UIController.Health2-= 10;
+	obj_UIController.p2Stats[pos]++
 }
