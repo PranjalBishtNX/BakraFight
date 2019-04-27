@@ -1,0 +1,1 @@
+x = lerp(x, tX, lerpS)

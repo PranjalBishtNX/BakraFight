@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "61455221-454e-4ce0-9f71-dc80fc3d3c20",
+            "Value": {
+                "id": "c60bb0cc-f841-43b9-97af-25685185423b",
+                "resourcePath": "objects\\obj_P2StatsUI\\obj_P2StatsUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "67772687-94e6-4bfd-b39a-674442cb0f56",
             "Value": {
                 "id": "6db3ed87-4be0-4ab3-8014-3002f5565e92",
@@ -132,6 +140,14 @@
                 "id": "c4751246-2737-4ee8-a5cc-4db2928d616d",
                 "resourcePath": "views\\77a7367c-4959-4c8c-94ae-c8df95216e63.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "77cb8bc5-29c4-4b58-a907-fbbb33477b91",
+            "Value": {
+                "id": "261a8d7c-af6f-4868-ad73-f24cdee9c56f",
+                "resourcePath": "objects\\obj_P1StatsUI\\obj_P1StatsUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -180,14 +196,6 @@
                 "id": "dd5b1827-eb6b-4be4-acff-2457502d590b",
                 "resourcePath": "views\\992226fb-b751-49ab-9595-40667b5aa41c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "99e656b8-56d2-41a1-a028-240ee9c2c931",
-            "Value": {
-                "id": "1f42b4d0-8cc9-496a-b967-25eb603a29b4",
-                "resourcePath": "objects\\obj_P2IconCursor\\obj_P2IconCursor.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -244,6 +252,14 @@
                 "id": "f210cb0d-5c90-46b0-aa1d-254aada5123d",
                 "resourcePath": "views\\c11fe1a7-d665-4344-80c0-a0d11745f94d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c4d8822c-54e9-4d49-b3c1-4c333b4850ac",
+            "Value": {
+                "id": "d463225a-47a7-4fd8-9ab2-657a6e33d0ae",
+                "resourcePath": "objects\\obj_P2IconCursor\\obj_P2IconCursor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
