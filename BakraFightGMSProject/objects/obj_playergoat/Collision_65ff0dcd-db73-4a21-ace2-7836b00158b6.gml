@@ -3,7 +3,7 @@ with(other)
 	if (!isHit)
 	{
 
-		hp = hp - 10;
+		hp = hp - obj_playergoat.atkDmg; //attack damage
 		isHit = true;
 		alarm_set(2, 20);
 		
