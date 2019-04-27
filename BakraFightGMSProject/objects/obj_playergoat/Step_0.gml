@@ -60,38 +60,29 @@ if(state == "attack")
 	hmov = -bashSpeed;
 }
 
-
-
-//player collision
-if (place_meeting(x+hmov,y,obj_enemygoat))
-{
-		while (!place_meeting(x+sign(hmov),y,obj_enemygoat))
-		{
-			x = x + sign(hmov)
-			
-		}
-		hmov = -bashSpeed + 10
-	
-}
-
+if (place_meeting(x,y,obj_end))
+	while (!place_meeting(x+sign(x),y,obj_end))
+	{
+		x = x + sign(x)
+	}
 x = x + hmov;
 
-//room boundary
-if (place_meeting(x+hmov,y,obj_end))
-{
-		while (!place_meeting(x+sign(hmov),y,obj_end))
-		{
-			x = x + sign(hmov)
+////room boundary
+//if (place_meeting(x+hmov,y,obj_end))
+//{
+//		while (!place_meeting(x+sign(hmov),y,obj_end))
+//		{
+//			x = x + sign(hmov)
 			
-		}
-		hmov = 0
+//		}
+//		hmov = 0
 	
-}
-
-x = x + hmov;
+//}
 
 
 
+
+obj_UIController.Health1 = hp
 
 
 

@@ -61,33 +61,33 @@ if(state == "attack")
 	hmov = bashSpeed;
 }
 
-//player collision
-if (place_meeting(x+hmov,y,obj_playergoat))
-{
-		while (!place_meeting(x+sign(hmov),y,obj_playergoat))
-		{
-			x = x + sign(hmov)
-			
-		}
-		hmov = bashSpeed - 10
-	
-}
+if (place_meeting(x,y,obj_end))
+	while (!place_meeting(x+sign(x),y,obj_end))
+	{
+		x = x - sign(x)
+	}
 
 x = x + hmov;
 
-//room boundary
-if (place_meeting(x+hmov,y,obj_end))
-{
-		while (!place_meeting(x+sign(hmov),y,obj_end))
-		{
-			x = x + sign(hmov)
+////room boundary
+//if (place_meeting(x+hmov,y,obj_end))
+//{
+//	    if(x<32) x = 32;
+//		if(x>room_width-32) x = room_width-32;
+		
+//		if(x<room_width/2)
+//			x = x+hmov;
+//		else
+//			x = x-hmov;
+		
 			
-		}
-		hmov = 0
 	
-}
+	
+//}
 
-x = x + hmov;
+
+
+obj_UIController.Health2 = hp
 
 
 
