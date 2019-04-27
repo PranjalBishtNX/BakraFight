@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "e4cd2ae9-698b-4310-9ce8-85f022ae4866",
+            "Value": {
+                "id": "2493d3c2-7e4a-4f8c-8801-cc0104a20ab2",
+                "resourcePath": "fonts\\AGothic12\\AGothic12.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "edc26fc4-215f-40f0-b89b-6de4baf79cd7",
             "Value": {
                 "id": "7617e8ba-db95-4905-9ee9-215a19d7aae6",
