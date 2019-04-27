@@ -10,8 +10,8 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 if(state!="attack"){
 	var move = key_right - key_left;
 
-	if(move == 1)  image_xscale = scale
-	else if(move == -1) image_xscale = -scale
+	if(move == 1)  image_xscale = -scale
+	else if(move == -1) image_xscale = scale
 
 	hmov = lerp(hmov, move * walksp,0.2);
 
@@ -56,20 +56,20 @@ if(state == "attack")
 {
 	vmov = 0;
 	if(image_xscale>0)
-		hmov = bashSpeed;
+		hmov = -bashSpeed;
 	else
-	hmov = -bashSpeed;
+	hmov = bashSpeed;
 }
 
 //player collision
-if (place_meeting(x+hmov,y,obj_enemygoat))
+if (place_meeting(x+hmov,y,obj_playergoat))
 {
-		while (!place_meeting(x+sign(hmov),y,obj_enemygoat))
+		while (!place_meeting(x+sign(hmov),y,obj_playergoat))
 		{
 			x = x + sign(hmov)
 			
 		}
-		hmov = -bashSpeed + 10
+		hmov = bashSpeed - 10
 	
 }
 
