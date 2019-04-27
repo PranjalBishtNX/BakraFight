@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "399c8258-eba8-421f-9697-eb9ad655123b",
+            "Value": {
+                "id": "c3b2b201-bd5d-43d9-8a78-01c709b5860f",
+                "resourcePath": "sprites\\UI_HPBarFill\\UI_HPBarFill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4bffbc29-9892-4a38-9013-b46f3855bc5a",
             "Value": {
                 "id": "3f955fae-ef32-4a8c-987c-dfff1b7e455e",
@@ -71,11 +79,27 @@
             }
         },
         {
+            "Key": "6101efe2-3ddd-4848-9ec6-840e9a0ee835",
+            "Value": {
+                "id": "8abdc672-d9b1-4686-bc92-0642e924d3a0",
+                "resourcePath": "sprites\\UI_HPBarHolder\\UI_HPBarHolder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67772687-94e6-4bfd-b39a-674442cb0f56",
             "Value": {
                 "id": "6db3ed87-4be0-4ab3-8014-3002f5565e92",
                 "resourcePath": "views\\67772687-94e6-4bfd-b39a-674442cb0f56.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6abbb6a2-ab49-47aa-a867-39d5cfa70d51",
+            "Value": {
+                "id": "69991e2a-8f9a-45c4-b0f9-8414777a6ec5",
+                "resourcePath": "sprites\\UI_HPBarExtend\\UI_HPBarExtend.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -99,6 +123,14 @@
             "Value": {
                 "id": "19fffbb7-1ea2-41b4-aa7f-67245c2c3e43",
                 "resourcePath": "sprites\\bg_Fire\\bg_Fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "82f5b44f-f315-47f8-9553-c94baae4bdec",
+            "Value": {
+                "id": "393faef2-8b91-43f7-b60f-773e751ea849",
+                "resourcePath": "sprites\\UI_HPBarEnd\\UI_HPBarEnd.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -183,6 +215,22 @@
             }
         },
         {
+            "Key": "e0b3075a-9952-4f12-9c21-e437d690443d",
+            "Value": {
+                "id": "0f860784-631f-4d4f-b5bb-382d6c59bb6f",
+                "resourcePath": "objects\\obj_UIController\\obj_UIController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e10144f7-19b6-469c-8ff1-51eac78696a7",
+            "Value": {
+                "id": "75ba099e-478e-4d2d-9e8e-44db5bf5e13f",
+                "resourcePath": "views\\e10144f7-19b6-469c-8ff1-51eac78696a7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "edc26fc4-215f-40f0-b89b-6de4baf79cd7",
             "Value": {
                 "id": "7617e8ba-db95-4905-9ee9-215a19d7aae6",
@@ -204,6 +252,14 @@
                 "id": "8a9e25ea-645c-45d0-a9af-fbc76b05c28d",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fe8965f2-b138-4163-baf3-b7511c5d2267",
+            "Value": {
+                "id": "594135d6-e01c-434a-bf53-ce5367fddf6a",
+                "resourcePath": "objects\\UI_HPBar\\UI_HPBar.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
