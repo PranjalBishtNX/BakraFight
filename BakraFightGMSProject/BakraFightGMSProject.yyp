@@ -98,7 +98,7 @@
             "Key": "81bf131c-d820-46d6-a4e9-fe663e1fcaaf",
             "Value": {
                 "id": "19fffbb7-1ea2-41b4-aa7f-67245c2c3e43",
-                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourcePath": "sprites\\bg_Fire\\bg_Fire.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -124,6 +124,14 @@
                 "id": "a7a638b7-7277-4e5c-8a79-c15e6a514236",
                 "resourcePath": "views\\9a87dc93-3b62-4d5a-bfef-25364ab0e037.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a1e4a56f-92ba-4307-8e9a-43e6a172371c",
+            "Value": {
+                "id": "a025aed9-2e3e-4c93-aa41-adefa790925a",
+                "resourcePath": "sprites\\spr_Bakra1_Idle\\spr_Bakra1_Idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -154,7 +162,7 @@
             "Key": "bdd032cd-a38e-4cca-9c3b-e20afe925372",
             "Value": {
                 "id": "757e4f08-f2e3-4b16-bff7-7833321f7502",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_Main\\rm_Main.yy",
                 "resourceType": "GMRoom"
             }
         },

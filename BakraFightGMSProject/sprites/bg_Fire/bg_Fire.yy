@@ -2,7 +2,7 @@
     "id": "81bf131c-d820-46d6-a4e9-fe663e1fcaaf",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite0",
+    "name": "bg_Fire",
     "For3D": false,
     "HTile": false,
     "VTile": false,
