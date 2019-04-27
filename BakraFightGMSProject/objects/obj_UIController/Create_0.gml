@@ -5,7 +5,7 @@ Health2 = 100
 //p1count = 0
 //p2count = 0
 
-p1Stats = [1,2,3]
-p2Stats = [2,1,2]
+p1Stats = [0,0,0]
+p2Stats = [0,0,0]
 
 dist = 64
