@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "077ade2a-3d44-45db-8bc7-443443b8504f",
+            "Value": {
+                "id": "ac05bace-c2a4-4a14-bdc9-e1f0fb32c6a4",
+                "resourcePath": "sprites\\UI_IconCursor\\UI_IconCursor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17a388d7-7757-4803-8d6e-1f391360ff40",
             "Value": {
                 "id": "5950cbdb-33fa-44eb-9914-683ab141db60",
@@ -111,11 +119,27 @@
             }
         },
         {
+            "Key": "72cf005c-22ed-4b7f-bfaa-aeef8741191f",
+            "Value": {
+                "id": "55d2f9ee-8211-4d9d-ae51-5dc49d736531",
+                "resourcePath": "objects\\obj_P1Icon\\obj_P1Icon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "77a7367c-4959-4c8c-94ae-c8df95216e63",
             "Value": {
                 "id": "c4751246-2737-4ee8-a5cc-4db2928d616d",
                 "resourcePath": "views\\77a7367c-4959-4c8c-94ae-c8df95216e63.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7f7fbfd2-4e95-4f7c-9f39-411cf485774e",
+            "Value": {
+                "id": "fcc00c59-5e35-4b44-a21d-12d42f68914c",
+                "resourcePath": "objects\\obj_P1IconCursor\\obj_P1IconCursor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -143,11 +167,27 @@
             }
         },
         {
+            "Key": "925d2d64-600a-44f2-83fb-64bc019834f4",
+            "Value": {
+                "id": "41376890-36c7-4b6d-964a-1e98b6036e8f",
+                "resourcePath": "sprites\\UI_Icons\\UI_Icons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "992226fb-b751-49ab-9595-40667b5aa41c",
             "Value": {
                 "id": "dd5b1827-eb6b-4be4-acff-2457502d590b",
                 "resourcePath": "views\\992226fb-b751-49ab-9595-40667b5aa41c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "99e656b8-56d2-41a1-a028-240ee9c2c931",
+            "Value": {
+                "id": "1f42b4d0-8cc9-496a-b967-25eb603a29b4",
+                "resourcePath": "objects\\obj_P2IconCursor\\obj_P2IconCursor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -204,6 +244,14 @@
                 "id": "f210cb0d-5c90-46b0-aa1d-254aada5123d",
                 "resourcePath": "views\\c11fe1a7-d665-4344-80c0-a0d11745f94d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c9750ad1-c90b-44c5-9154-1708abf1c045",
+            "Value": {
+                "id": "18719546-209f-4c79-a266-7d0e9ef37966",
+                "resourcePath": "objects\\obj_P2Icon\\obj_P2Icon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
