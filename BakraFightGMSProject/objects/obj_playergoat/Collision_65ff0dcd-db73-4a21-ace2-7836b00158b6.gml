@@ -7,9 +7,16 @@ with(other)
 		isHit = true;
 		alarm_set(2, 20);
 		
+		
 		if(hp <= 0)
 		instance_destroy();
 	
 	}
 
-
+with(other)
+if (state = "attack") 
+{
+		hmov = 0
+	
+	
+}
