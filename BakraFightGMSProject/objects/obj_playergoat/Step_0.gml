@@ -21,7 +21,7 @@ if(state!="attack"){
 if (place_meeting(x,y+1,obj_ground)) && (key_jump) && state != "attack"
 {	
 	state = "jump"
-	vmov = -15
+	vmov = -jmpHt //jump height
 
 }
 
@@ -89,6 +89,8 @@ if (place_meeting(x+hmov,y,obj_end))
 }
 
 x = x + hmov;
+
+
 
 
 
