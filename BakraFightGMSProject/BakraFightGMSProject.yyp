@@ -34,7 +34,7 @@
             "Key": "077ade2a-3d44-45db-8bc7-443443b8504f",
             "Value": {
                 "id": "ac05bace-c2a4-4a14-bdc9-e1f0fb32c6a4",
-                "resourcePath": "sprites\\UI_IconCursor\\UI_IconCursor.yy",
+                "resourcePath": "sprites\\UI_IconCursor1\\UI_IconCursor1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -76,6 +76,14 @@
                 "id": "e9faeca2-c930-4ec4-ba6c-816377a1a586",
                 "resourcePath": "objects\\obj_SelectFeedback\\obj_SelectFeedback.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2cb8fd1a-65c8-42a2-91e7-c764fa450654",
+            "Value": {
+                "id": "ab8f4669-f51f-4d6b-8139-1701df4b1806",
+                "resourcePath": "sprites\\UI_IconCursor2\\UI_IconCursor2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
