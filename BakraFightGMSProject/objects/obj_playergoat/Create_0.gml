@@ -15,6 +15,8 @@ hp = 100;
 isHit = false;
 knockBck = 5;
 jumpAtkUsed = false;
+minCritCards = 3;
+critChance = 3;
 
 
 

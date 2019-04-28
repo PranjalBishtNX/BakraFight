@@ -15,7 +15,9 @@ hp = 100;
 isHit = false;
 knockBck = 5;
 jumpAtkUsed = false;
-
+image_xscale = -image_xscale;
+minCritCards = 3;
+critChance = 3;
 
 
 
