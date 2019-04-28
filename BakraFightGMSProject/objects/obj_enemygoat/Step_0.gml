@@ -22,9 +22,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack")
 	{	
 		state = "jump"
-		vmov = -jmpHt //jump height
-	
-
+		vmov = -jmpHt //jump height	
 	}
 
 
@@ -55,6 +53,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 	 {
 		 jumpAtkUsed = true;
 		 state = "attack"
+		 image_index=0;  //when attack starts bring anim to start(for bash)
 		 alarm_set(0, atkTime)
 		 canAttack = false;
 	 }
@@ -62,6 +61,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 	 {
 		  jumpAtkUsed = false;
 		 state = "attack"
+		  image_index=0;
 		 alarm_set(0, atkTime)
 		 canAttack = false;
 	 }
@@ -73,7 +73,9 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		if(image_xscale>0)
 			hmov = bashSpeed;
 		else
-		hmov = -bashSpeed;
+			hmov = -bashSpeed;
+			
+		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
 	}
 
 	if (place_meeting(x,y,obj_end))
@@ -83,34 +85,24 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		}
 	x = x + hmov;
 
-	////room boundary
-	//if (place_meeting(x+hmov,y,obj_end))
-	//{
-	//		while (!place_meeting(x+sign(hmov),y,obj_end))
-	//		{
-	//			x = x + sign(hmov)
-			
-	//		}
-	//		hmov = 0
-	
-	//}
-	///////////////////////////animation stuff///////////////////////
 
+	if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
+	{
+		image_speed = 1;
+		sprite_index = spr_bluegoat_run;
+	}
 
-	//if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
-	//{
-	//	sprite_index = spr_playergoat_run;
-	//}
+	else if(move==0 && state == "normal")
+	{
+		image_speed = 1;
+		sprite_index = spr_bluegoat;
+	}
+	else if  (state == "attack")
+	{
+		sprite_index = spr_playergoat_dash;
+		if(image_index>3) image_speed = 0;
 
-	//if(move==0 && state == "normal")
-	//{
-	//	sprite_index = spr_playergoat;
-	//}
-	//if  (state == "attack")
-	//{
-	//	sprite_index = spr_playergoat_dash;
-
-	//}
+	}
 	//obj_UIController.Health1 = hp
 
 }

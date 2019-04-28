@@ -2,13 +2,13 @@ playerOnLeft = sign(other.x-x);
 other.playerOnLeft = sign(other.x-x);
 
 
-if(state=="attack")
+if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not in anticipation frames)
 {
 	state="normal";
 	x = x - playerOnLeft * bashSpeed/2;
 	hmov = -playerOnLeft * bashSpeed/2;
 	
-	if(other.state == "attack") //no damamge
+	if(other.state == "attack" && other.image_index>=antFrames) //no damamge  //make sure he's not in anticipation phase of attack
 	{
 		with(other)
 		{
@@ -20,6 +20,7 @@ if(state=="attack")
 	} else{
 		with(other)
 		{
+			state="normal";
 			x = x + playerOnLeft*bashSpeed;
 			hmov = playerOnLeft*bashSpeed;	
 			hp = hp - obj_playergoat.atkDmg; //attack damage
@@ -28,13 +29,18 @@ if(state=="attack")
 	}
 	
 }
-else 
+else //player is not charging
 {
-	if(other.state == "attack")
+	if(other.state == "attack" && other.image_index>=antFrames)
 	{
+		state = "normal";
 		x = x - playerOnLeft*bashSpeed;
 		hmov = -playerOnLeft*bashSpeed;	
+		
+		
+		
 		hp = hp - obj_enemygoat.atkDmg; //attack damage
+		
 		
 		with(other){
 			state = "normal";
@@ -42,10 +48,12 @@ else
 			hmov = playerOnLeft*bashSpeed/2;
 		}
 	}
-	else {
+	else {  // simple collision, no one is charging
+		
 		x = x - playerOnLeft * bashSpeed/2;
 		hmov = -playerOnLeft * bashSpeed/2;
 		with(other){
+			
 			x = x + playerOnLeft*bashSpeed/2;
 			hmov = playerOnLeft*bashSpeed/2;
 		}

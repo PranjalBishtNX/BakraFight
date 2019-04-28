@@ -22,9 +22,7 @@ if(global.mode=="combat")
 	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack")
 	{	
 		state = "jump"
-		vmov = -jmpHt //jump height
-	
-
+		vmov = -jmpHt //jump height	
 	}
 
 
@@ -87,19 +85,6 @@ if(global.mode=="combat")
 		}
 	x = x + hmov;
 
-	////room boundary
-	//if (place_meeting(x+hmov,y,obj_end))
-	//{
-	//		while (!place_meeting(x+sign(hmov),y,obj_end))
-	//		{
-	//			x = x + sign(hmov)
-			
-	//		}
-	//		hmov = 0
-	
-	//}
-	///////////////////////////animation stuff///////////////////////
-
 
 	if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
 	{
@@ -118,6 +103,5 @@ if(global.mode=="combat")
 		if(image_index>3) image_speed = 0;
 
 	}
-	//obj_UIController.Health1 = hp
 
 }
