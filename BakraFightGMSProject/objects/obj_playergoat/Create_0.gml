@@ -15,6 +15,8 @@ hp = 100;
 isHit = false;
 knockBck = 5;
 jumpAtkUsed = false;
+minCritCards = 3;
+critChance = 3;
 
 //animation stuff
 antFrames = 3;  //number of anticipation frames in bash
