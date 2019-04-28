@@ -44,7 +44,7 @@ else
 	}
 	else {
 		x = x - playerOnLeft * bashSpeed/2;
-		hmov = -playerOnLeft*bashSpeed/2;
+		hmov = -playerOnLeft * bashSpeed/2;
 		with(other){
 			x = x + playerOnLeft*bashSpeed/2;
 			hmov = playerOnLeft*bashSpeed/2;

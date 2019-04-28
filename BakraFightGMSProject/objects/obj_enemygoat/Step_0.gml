@@ -87,7 +87,7 @@ x = x + hmov;
 
 
 
-obj_UIController.Health2 = hp
+//obj_UIController.Health2 = hp
 
 
 

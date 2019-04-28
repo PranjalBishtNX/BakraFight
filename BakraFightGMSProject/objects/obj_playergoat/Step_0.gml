@@ -82,20 +82,17 @@ x = x + hmov;
 
 
 
-if(move!=0 && state == "normal" && state!= "jump" && state!="attack")
+if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
 {
 	sprite_index = spr_playergoat_run;
-
-	
 }
 
 if(move==0 && state == "normal")
 {
 	sprite_index = spr_playergoat;
-	image_speed = 1;
 }
-obj_UIController.Health1 = hp
 
+//obj_UIController.Health1 = hp
 
 
 
