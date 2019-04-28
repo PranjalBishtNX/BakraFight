@@ -55,6 +55,7 @@ if(global.mode=="combat")
 	 {
 		 jumpAtkUsed = true;
 		 state = "attack"
+		 image_index=0;  //when attack starts bring anim to start(for bash)
 		 alarm_set(0, atkTime)
 		 canAttack = false;
 	 }
@@ -62,6 +63,7 @@ if(global.mode=="combat")
 	 {
 		  jumpAtkUsed = false;
 		 state = "attack"
+		  image_index=0;
 		 alarm_set(0, atkTime)
 		 canAttack = false;
 	 }
@@ -73,7 +75,9 @@ if(global.mode=="combat")
 		if(image_xscale>0)
 			hmov = bashSpeed;
 		else
-		hmov = -bashSpeed;
+			hmov = -bashSpeed;
+			
+		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
 	}
 
 	if (place_meeting(x,y,obj_end))
@@ -99,16 +103,19 @@ if(global.mode=="combat")
 
 	if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
 	{
+		image_speed = 1;
 		sprite_index = spr_playergoat_run;
 	}
 
-	if(move==0 && state == "normal")
+	else if(move==0 && state == "normal")
 	{
+		image_speed = 1;
 		sprite_index = spr_playergoat;
 	}
-	if  (state == "attack")
+	else if  (state == "attack")
 	{
 		sprite_index = spr_playergoat_dash;
+		if(image_index>3) image_speed = 0;
 
 	}
 	//obj_UIController.Health1 = hp

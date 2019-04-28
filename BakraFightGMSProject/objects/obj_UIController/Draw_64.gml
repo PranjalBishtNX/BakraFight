@@ -29,7 +29,7 @@ if(global.mode == "preCombat")
 {
 	draw_set_font(AGothicBig)
 	
-	if(timeLeft>=0)
+	if(timeLeft>0)
 		draw_text(room_width*0.5, y + 128, string(timeLeft));
 	else
 		draw_text(room_width*0.5, y + 128, string("FIGHT!"));

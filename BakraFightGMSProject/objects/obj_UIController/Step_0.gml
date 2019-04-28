@@ -6,12 +6,12 @@ if(global.mode == "preCombat")
 		timerWaiting = true;
 		alarm_set(0,sec);
 	}
-	if(timeLeft <=-2){
+	if(timeLeft ==-1){
 		global.mode = "combat";   //START COMBAT
 		obj_P1IconCursor.visible = false;
 		obj_P2IconCursor.visible = false;
 		with(obj_playergoat)	event_user(0)
-			with(obj_enemygoat)	event_user(0)
+		with(obj_enemygoat)		event_user(0)
 	}
 }
 else if(global.mode == "combat")
