@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "aafb57d3-7c4e-4f14-8319-08716aed3430",
+            "Value": {
+                "id": "4cd6fb15-2a15-4be6-85f4-5f92f5d77b5b",
+                "resourcePath": "sprites\\spr_playergoat_death\\spr_playergoat_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "abf96484-e3ab-4051-81b6-d8b8a970d7c3",
             "Value": {
                 "id": "8760d7e4-78e5-458b-9aa3-c9ca91d7cfaa",
