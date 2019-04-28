@@ -8,7 +8,7 @@ if(global.mode=="combat")
 
 	move=0
 	//move
-	if(state!="attack"){
+	if(state!="attack"  && state!="hurt"){
 		move = key_right - key_left;
 
 		if(move == 1)  image_xscale = scale
@@ -19,7 +19,7 @@ if(global.mode=="combat")
 		vmov = vmov + grv;
 	}
 	//jump
-	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack")
+	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack" && state!="hurt")
 	{	
 		state = "jump"
 		vmov = -jmpHt //jump height	
@@ -45,7 +45,7 @@ if(global.mode=="combat")
 	y = y + vmov;
 
 
-	if (key_attack && canAttack)
+	if (key_attack && canAttack  && state!="hurt")
 	{
 	 if(state=="jump" && !jumpAtkUsed)
 	 {
@@ -83,7 +83,23 @@ if(global.mode=="combat")
 		}
 	x = x + hmov;
 
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/////////////////animation stuff/////////////
+	if(alarm_get(3)>0) state ="hurt"
+	
 	if(move!=0 && state == "normal")  //run
 	{
 		image_speed = 1;
@@ -111,5 +127,10 @@ if(global.mode=="combat")
 		sprite_index = spr_playergoat_jumpFall;
 		if(vmov<0) image_index = 0;
 		else image_index = 1;
+	} else if (state == "hurt")
+	{
+		image_speed = 1;
+		sprite_index = spr_playergoat_hurt;
+		
 	}
 }

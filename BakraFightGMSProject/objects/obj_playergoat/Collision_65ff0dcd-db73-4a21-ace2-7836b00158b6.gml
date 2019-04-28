@@ -24,6 +24,8 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 			x = x + playerOnLeft*bashSpeed;
 			hmov = playerOnLeft*bashSpeed;	
 			hp = hp - obj_playergoat.atkDmg; //attack damage
+			state = "hurt";
+			alarm_set(3,hurtTime);
 		}
 		
 	}
@@ -40,6 +42,8 @@ else //player is not charging
 		
 		
 		hp = hp - obj_enemygoat.atkDmg; //attack damage
+		state = "hurt";
+		alarm_set(3,hurtTime);
 		
 		
 		with(other){

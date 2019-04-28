@@ -8,7 +8,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 
 	move=0
 	//move
-	if(state!="attack"){
+	if(state!="attack"  && state!="hurt"){
 		move = key_right - key_left;
 
 		if(move == 1)  image_xscale = scale
@@ -19,7 +19,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		vmov = vmov + grv;
 	}
 	//jump
-	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack")
+	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack"  && state!="hurt")
 	{	
 		state = "jump"
 		vmov = -jmpHt //jump height	
@@ -47,7 +47,7 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 	y = y + vmov;
 
 
-	if (key_attack && canAttack)
+	if (key_attack && canAttack  && state!="hurt")
 	{
 	 if(state=="jump" && !jumpAtkUsed)
 	 {
@@ -86,6 +86,23 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 	x = x + hmov;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////animation stuff/////////////
+	if(alarm_get(3)>0) state ="hurt"
+	
+
 	if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
 	{
 		image_speed = 1;
@@ -102,7 +119,11 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		sprite_index = spr_playergoat_dash;
 		if(image_index>3) image_speed = 0;
 
+	} else if (state == "hurt")
+	{
+		image_speed = 1;
+		sprite_index = spr_playergoat_hurt;
+		
 	}
-	//obj_UIController.Health1 = hp
 
 }
