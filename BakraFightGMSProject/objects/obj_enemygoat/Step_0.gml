@@ -8,9 +8,11 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 
 	move=0
 	//move
-	if(state!="attack"  && state!="hurt"){
+	if(state!="attack"){
 		move = key_right - key_left;
-
+		
+		if(state=="hurt") move = 0;
+		
 		if(move == 1)  image_xscale = scale
 		else if(move == -1) image_xscale = -scale
 
@@ -78,11 +80,11 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
 	}
 
-	if (place_meeting(x,y,obj_end))
-		while (!place_meeting(x+sign(x),y,obj_end))
-		{
-			x = x + sign(x)
-		}
+	//if (place_meeting(x,y,obj_end))
+	//	while (!place_meeting(x+sign(x),y,obj_end))
+	//	{
+	//		x = x + sign(x)
+	//	}
 	x = x + hmov;
 
 
@@ -126,4 +128,20 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		
 	}
 
+}
+
+
+
+if(global.mode =="postCombat")
+{
+	if(hp<=0)
+	{
+		image_speed = 0;
+		sprite_index = spr_playergoat_death;
+	}
+	else
+	{
+		image_speed = 1;
+		sprite_index = spr_bluegoat;
+	}
 }

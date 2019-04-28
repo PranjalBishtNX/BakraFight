@@ -18,4 +18,13 @@ else if(global.mode == "combat")
 {
 	Health1 = obj_playergoat.hp
 	Health2 = obj_enemygoat.hp
+	
+	if(Health1<0 || Health2<0)
+	{
+		global.mode = "postCombat"
+	}
+}
+else if(global.mode == "postCombat")
+{
+	//do postCombatStuff
 }
