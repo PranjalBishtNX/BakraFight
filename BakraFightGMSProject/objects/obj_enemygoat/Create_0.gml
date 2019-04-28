@@ -1,7 +1,7 @@
 hmov = 0;
 vmov = 0;
 grv = 0.7;
-walksp = 2; //movement speed
+walksp = 4; //movement speed
 jmpHt = 15; //jump height
 atkDmg = 10; //attack damage
 hp = 100;
@@ -14,3 +14,7 @@ canAttack = true;
 hp = 100;
 isHit = false;
 knockBck = 5;
+
+jumpAtkUsed = false;
+
+image_xscale = -image_xscale;

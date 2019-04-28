@@ -10,6 +10,8 @@ if(global.mode == "preCombat")
 		global.mode = "combat";   //START COMBAT
 		obj_P1IconCursor.visible = false;
 		obj_P2IconCursor.visible = false;
+		with(obj_playergoat)	event_user(0)
+			with(obj_enemygoat)	event_user(0)
 	}
 }
 else if(global.mode == "combat")
