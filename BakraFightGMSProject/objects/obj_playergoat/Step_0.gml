@@ -22,7 +22,7 @@ if (place_meeting(x,y+1,obj_ground)) && (key_jump) && state != "attack"
 {	
 	state = "jump"
 	vmov = -jmpHt //jump height
-
+	
 
 }
 
@@ -47,9 +47,18 @@ y = y + vmov;
 
 if (key_attack && canAttack)
 {
+ if(state=="jump" && !jumpAtkUsed)
+ {
+	 jumpAtkUsed = true;
+	 state = "attack"
+	 alarm_set(0, atkTime)
+	 canAttack = false;
+ }
+ else{
  state = "attack"
  alarm_set(0, atkTime)
  canAttack = false;
+ }
 }
 
 if(state == "attack")
