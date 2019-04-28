@@ -27,7 +27,7 @@ for(i = 2; i >=0; i -= 1) {
 
 if(global.mode == "preCombat")
 {
-	draw_set_font(AGothicBigNum)
+	draw_set_font(AGothicBig)
 	
 	if(timeLeft>=0)
 		draw_text(room_width*0.5, y + 128, string(timeLeft));

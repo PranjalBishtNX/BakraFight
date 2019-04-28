@@ -5,7 +5,7 @@ Health2 = 100
 
 timeLeft = 6;  //put 1 more than the actual value here, it reduces by 1 right at the start
 timerWaiting = false;
-
+sec = 30;    //should be 60 ideally
 
 //p1count = 0
 //p2count = 0
