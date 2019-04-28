@@ -1,4 +1,5 @@
-
+if(global.mode=="combat")
+{
 //player
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -111,11 +112,5 @@ if  (state == "attack")
 
 }
 //obj_UIController.Health1 = hp
-
-show_debug_message(string(state));
-
-
-
-
 
 

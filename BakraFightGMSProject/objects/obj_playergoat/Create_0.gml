@@ -11,7 +11,7 @@ bashSpeed = 25;
 atkTime = 5;
 atkCool = 20;
 canAttack = true;
-hp = 50;
+hp = 100;
 isHit = false;
 knockBck = 5;
 
