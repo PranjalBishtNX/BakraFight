@@ -18,7 +18,7 @@ if(state!="attack"){
 	vmov = vmov + grv;
 }
 //jump
-if (place_meeting(x,y+1,obj_ground)) && (key_jump) && state != "attack"
+if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack")
 {	
 	state = "jump"
 	vmov = -jmpHt //jump height
@@ -30,8 +30,11 @@ if (place_meeting(x,y+1,obj_ground)) && (key_jump) && state != "attack"
 //gravity
 if (place_meeting(x,y+vmov,obj_ground))
 {
-		if state = "jump"
+		if (state == "jump")
+		{
 			state = "normal";
+			jumpAtkUsed = false;
+		}
 		while (!place_meeting(x,y+sign(vmov),obj_ground))
 		{
 			y = y + sign(vmov);
@@ -54,10 +57,12 @@ if (key_attack && canAttack)
 	 alarm_set(0, atkTime)
 	 canAttack = false;
  }
- else{
- state = "attack"
- alarm_set(0, atkTime)
- canAttack = false;
+ else if(state == "normal")
+ {
+	  jumpAtkUsed = false;
+	 state = "attack"
+	 alarm_set(0, atkTime)
+	 canAttack = false;
  }
 }
 
@@ -88,7 +93,7 @@ x = x + hmov;
 //		hmov = 0
 	
 //}
-
+///////////////////////////animation stuff///////////////////////
 
 
 if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
@@ -100,12 +105,14 @@ if(move==0 && state == "normal")
 {
 	sprite_index = spr_playergoat;
 }
+if  (state == "attack")
+{
+	sprite_index = spr_playergoat_dash;
 
+}
 //obj_UIController.Health1 = hp
 
-
-
-
+show_debug_message(string(state));
 
 
 
