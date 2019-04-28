@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "15717ee1-add9-49b9-bfe3-3d56617264e0",
+            "Value": {
+                "id": "843f4e54-4257-42ba-8ee5-b9116d7bd5ea",
+                "resourcePath": "fonts\\AGothicBig\\AGothicBig.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "17a388d7-7757-4803-8d6e-1f391360ff40",
             "Value": {
                 "id": "5950cbdb-33fa-44eb-9914-683ab141db60",

@@ -1,4 +1,5 @@
-
+if(global.mode=="combat")
+{
 //player
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -95,7 +96,7 @@ if(move==0 && state == "normal")
 //obj_UIController.Health1 = hp
 
 
-
+}
 
 
 
