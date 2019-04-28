@@ -90,7 +90,7 @@
             "Key": "2a483e33-ae0a-464e-b6d9-50386673379f",
             "Value": {
                 "id": "b6a9db8f-5bae-44a0-aa9d-68949e096a95",
-                "resourcePath": "sprites\\spr_bluegoat_run\\spr_bluegoat_run.yy",
+                "resourcePath": "sprites\\spr_bluegoat_charge\\spr_bluegoat_charge.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -394,7 +394,7 @@
             "Key": "b7be534e-6e5b-4c8c-ac87-98787f17fe6f",
             "Value": {
                 "id": "573f2c49-bfbc-4453-afc8-dcb60e7c2064",
-                "resourcePath": "sprites\\spr_bluegoat_run1\\spr_bluegoat_run1.yy",
+                "resourcePath": "sprites\\spr_bluegoat_run\\spr_bluegoat_run.yy",
                 "resourceType": "GMSprite"
             }
         },

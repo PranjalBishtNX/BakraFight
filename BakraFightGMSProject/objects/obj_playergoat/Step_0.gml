@@ -33,15 +33,13 @@ if(global.mode=="combat")
 			{
 				state = "normal";
 				jumpAtkUsed = false;
+				justLanded = 3;
 			}
 			while (!place_meeting(x,y+sign(vmov),obj_ground))
 			{
 				y = y + sign(vmov);
-		
-			}
-		
+			}	
 			vmov = 0;
-	
 	}
 
 	y = y + vmov;
@@ -86,22 +84,32 @@ if(global.mode=="combat")
 	x = x + hmov;
 
 
-	if(move!=0 && state == "normal")  // && state!= "jump" && state!="attack")  this isn't needed  - if state is normal it can't be jump or attack, so extra checks are useless
+	if(move!=0 && state == "normal")  //run
 	{
 		image_speed = 1;
 		sprite_index = spr_playergoat_run;
 	}
 
-	else if(move==0 && state == "normal")
+	else if(move==0 && state == "normal")  //idle
 	{
 		image_speed = 1;
 		sprite_index = spr_playergoat;
+		if(justLanded>0)
+		{
+			justLanded--;
+			sprite_index = spr_playergoat_jumpFall;
+			image_index = 2;
+		}
 	}
 	else if  (state == "attack")
 	{
 		sprite_index = spr_playergoat_dash;
 		if(image_index>3) image_speed = 0;
 
+	} else if (state =="jump")
+	{
+		sprite_index = spr_playergoat_jumpFall;
+		if(vmov<0) image_index = 0;
+		else image_index = 1;
 	}
-
 }
