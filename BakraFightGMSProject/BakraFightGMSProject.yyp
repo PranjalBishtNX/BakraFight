@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0ea61293-c47e-4f6b-a3fa-b6650d0c0ed6",
+            "Value": {
+                "id": "23300f3f-ee76-4e9f-b1ce-a5c141c3d8f8",
+                "resourcePath": "sprites\\bg_pentagram\\bg_pentagram.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "113f6a42-78ad-43d6-b8d5-135333ea921c",
             "Value": {
                 "id": "0dc0f733-6e1f-4ffa-883b-fada5f3c5e59",
@@ -172,6 +180,14 @@
                 "id": "ce381901-0c0b-499a-9263-5072d82e35a1",
                 "resourcePath": "sprites\\spr_playergoat_hurt\\spr_playergoat_hurt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ff37672-0bb2-42c4-b8fd-9eb5a47198b9",
+            "Value": {
+                "id": "374981d6-3511-4957-b294-d511b9375fa2",
+                "resourcePath": "objects\\obj_pentagram\\obj_pentagram.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -407,6 +423,14 @@
             }
         },
         {
+            "Key": "8fc62fed-bef3-40be-a8c2-4149c315c0b1",
+            "Value": {
+                "id": "92c025c9-e275-46ee-806f-771215949c76",
+                "resourcePath": "sprites\\UI_BuyPrompt\\UI_BuyPrompt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "925d2d64-600a-44f2-83fb-64bc019834f4",
             "Value": {
                 "id": "41376890-36c7-4b6d-964a-1e98b6036e8f",
@@ -627,6 +651,14 @@
             "Value": {
                 "id": "74ce75b8-ce91-4b7f-8907-c47685fe0277",
                 "resourcePath": "objects\\obj_BGOverlay\\obj_BGOverlay.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ed1f8109-93b0-4b50-80c5-617c23644231",
+            "Value": {
+                "id": "2d6afe87-b8a0-4b62-8cbc-ef7dcc5e5e22",
+                "resourcePath": "objects\\obj_buyPrompt\\obj_buyPrompt.yy",
                 "resourceType": "GMObject"
             }
         },

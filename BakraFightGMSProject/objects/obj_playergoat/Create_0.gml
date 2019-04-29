@@ -32,4 +32,5 @@ critChance = 3;
 antFrames = 3;  //number of anticipation frames in bash
 justLanded = 0;
 hurtTime = 20;
+//image_blend = make_color_rgb(255,100,100);
 
