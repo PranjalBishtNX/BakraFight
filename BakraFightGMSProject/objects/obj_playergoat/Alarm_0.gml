@@ -1,3 +1,4 @@
+///@description After attack ends
 if (place_meeting(x,y+1,obj_ground))
 	state = "normal";
 else

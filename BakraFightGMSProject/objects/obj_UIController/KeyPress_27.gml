@@ -1,4 +1,8 @@
-/// @DnDAction : YoYo Games.Game.End_Game
-/// @DnDVersion : 1
-/// @DnDHash : 209A67AA
-game_end();
+if(global.mode == "gameStart")
+{
+	game_end();
+}
+else
+{
+	room_restart();
+}

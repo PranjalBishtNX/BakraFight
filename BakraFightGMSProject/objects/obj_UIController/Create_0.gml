@@ -1,7 +1,9 @@
-global.mode = "preCombat"
+global.mode = "gameStart";
 
-Health1 = 100
-Health2 = 100
+Health1 = 100;
+Health2 = 100;
+wins1 = 0;
+wins2 = 0;
 
 timeLeft = 6;  //put 1 more than the actual value here, it reduces by 1 right at the start
 timerWaiting = false;

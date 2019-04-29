@@ -6,10 +6,10 @@ if(global.mode=="combat")
 	key_jump = keyboard_check_pressed(ord("W"));
 	key_attack = keyboard_check_pressed(vk_space);
 
-	move=0
+	move = key_right - key_left;
 	//move
 	if(state!="attack"){
-		move = key_right - key_left;
+		
 		
 		if(state=="hurt") move = 0;   //can't move if hurt
 		
@@ -20,6 +20,7 @@ if(global.mode=="combat")
 
 		vmov = vmov + grv;
 	}
+	
 	//jump
 	if (place_meeting(x,y+1,obj_ground) && (key_jump) && state != "attack" && state!="hurt")
 	{	
@@ -75,20 +76,27 @@ if(global.mode=="combat")
 		else
 			hmov = -bashSpeed;
 			
-		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
+		if(image_index<antFrames)
+		{
+			hmov = 0; //first few anticipation frames of bash are static
+			//if(image_xscale*move<0) //opposite dir button is pressed during anticipation NOT DOING THIS
+			//{
+			//	state = "normal"  // allow attack cancellation
+			//}	
+		}
 		
-		if(image_index==antFrames && atkDmg>60) // when damamge is very high do a shake
+		else if(image_index==antFrames && atkDmg>60) // when damamge is very high do a shake at start of charge
 		{
 			ss = instance_create_layer(0,0,"UI",obj_screenShake);
 			ss.y_multiplier = 0;
 		}
+		
+		
 	}
 
-	//if (place_meeting(x,y,obj_end))
-	//	while (!place_meeting(x+sign(x),y,obj_end))
-	//	{
-	//		x = x + sign(x)
-	//	}
+	
+	
+	
 	x = x + hmov;  //TO Final NEXT X ONCE ALL CALCS ARE DONE
 
 	

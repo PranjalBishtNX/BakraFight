@@ -9,10 +9,10 @@ scale = image_xscale;
 state = "normal";
 bashSpeed = 25;
 atkTime = 27;
-atkCool = 20;
+atkCool = 30;
 canAttack = true;
 hp = 100;
-isHit = false;
+
 knockBck = 5;
 jumpAtkUsed = false;
 minCritCards = 3;

@@ -8,9 +8,7 @@ if(global.mode == "preCombat")
 	}
 	if(timeLeft ==-1){
 		global.mode = "combat";   //START COMBAT
-		obj_P1IconCursor.visible = false;
-		obj_P2IconCursor.visible = false;
-		with(obj_playergoat)	event_user(0)
+		with(obj_playergoat)	event_user(0) //event for settng the stats bought
 		with(obj_enemygoat)		event_user(0)
 	}
 }
@@ -19,10 +17,23 @@ else if(global.mode == "combat")
 	Health1 = obj_playergoat.hp
 	Health2 = obj_enemygoat.hp
 	
-	if(Health1<0 || Health2<0)
+	if(Health1<=0)
+		if(Health2>0)  //p2 wins
+		{
+			global.mode = "postCombat"
+			wins2++;
+		}
+		else  //double KO
+		{
+			global.mode = "postCombat"
+		}
+	else if(Health2<=0)
 	{
 		global.mode = "postCombat"
+		wins1++;
 	}
+		
+	
 }
 else if(global.mode == "postCombat")
 {
