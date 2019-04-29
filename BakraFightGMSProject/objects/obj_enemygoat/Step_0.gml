@@ -85,8 +85,11 @@ key_attack = (keyboard_check_pressed(vk_rshift) || keyboard_check_pressed(vk_num
 			}
 			
 		if(image_index<antFrames) {
+			image_speed= 1;
+		
 			hmov = 0;
-			vmov = 0}//first few anticipation frames of bash are static
+			vmov = 0
+			}//first few anticipation frames of bash are static
 		
 		if(image_index==antFrames && atkDmg>60)  // when damamge is very high do a shake
 		{

@@ -82,6 +82,7 @@ if(global.mode=="combat")
 			
 		if(image_index<antFrames)
 		{
+			image_speed= 1;
 			hmov = 0;
 			vmov = 0;//first few anticipation frames of bash are static
 			//if(image_xscale*move<0) //opposite dir button is pressed during anticipation NOT DOING THIS

@@ -18,7 +18,7 @@
         "5ec06a45-05f0-44bb-b3c3-4c745d1b2e84",
         "916b731a-4aa0-4e8d-b257-a444f88dd9ce",
         "c9a696a0-de54-416b-b319-f2fb2988023d",
-        "e03869bb-c901-440a-a0dc-1701cddbb4c9"
+        "e03869bb-c901-440a-a0dc-1701cddbb4c9",
         "f70e5152-a97f-45f0-8ff9-8e456545ac5d"
     ],
     "IsDnD": true,
