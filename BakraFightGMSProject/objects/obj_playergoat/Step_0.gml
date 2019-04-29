@@ -71,14 +71,19 @@ if(global.mode=="combat")
 	if(state == "attack")
 	{
 		vmov = 0;
-		if(image_xscale>0)
+		if(image_xscale>0){
 			hmov = bashSpeed;
-		else
+			vmov = bashSpeed
+			}
+		else{
 			hmov = -bashSpeed;
+			vmov = bashSpeed
+			}
 			
 		if(image_index<antFrames)
 		{
-			hmov = 0; //first few anticipation frames of bash are static
+			hmov = 0;
+			vmov = 0;//first few anticipation frames of bash are static
 			//if(image_xscale*move<0) //opposite dir button is pressed during anticipation NOT DOING THIS
 			//{
 			//	state = "normal"  // allow attack cancellation
