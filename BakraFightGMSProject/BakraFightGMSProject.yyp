@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "84f1e876-7d34-48a3-b439-d5bbc7496587",
+            "Value": {
+                "id": "30a4b784-ade8-4c89-bdb8-56dc12d9a86e",
+                "resourcePath": "sounds\\bakra_hurt\\bakra_hurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8c328c4b-cc3c-4c21-b143-b228f42510ce",
             "Value": {
                 "id": "f06319b8-e8f7-4c82-9944-8b259729f354",

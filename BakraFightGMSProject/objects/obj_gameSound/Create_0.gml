@@ -1,1 +1,3 @@
-audio_play_sound(bakra_fight, 1000, 1);
+audio_group_load(sound_effects);
+audio_group_load(background_sound);
+
