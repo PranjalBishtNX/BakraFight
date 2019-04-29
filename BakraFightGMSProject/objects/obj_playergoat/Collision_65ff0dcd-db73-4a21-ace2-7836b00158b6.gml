@@ -31,6 +31,7 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 
 			state = "hurt";
 			alarm_set(3,hurtTime);
+			audio_play_sound(collision,5000,0)
 
 			
 			if (obj_playergoat.critdmg > 0)
@@ -72,6 +73,7 @@ else //player is not charging
 		ss.shake_amount+= obj_enemygoat.atkDmg*0.2;
 		state = "hurt";
 		alarm_set(3,hurtTime);
+		audio_play_sound(collision,5000,0)
 
 			
 			if (obj_enemygoat.critdmg > 0)

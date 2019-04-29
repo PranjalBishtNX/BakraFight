@@ -22,15 +22,18 @@ else if(global.mode == "combat")
 		{
 			global.mode = "postCombat"
 			wins2++;
+			audio_play_sound(bakra_die, 100, 0);
 		}
-		else  //double KO
+		else  //double KO...wait is this even possible?
 		{
 			global.mode = "postCombat"
+			audio_play_sound(bakra_die, 100, 0);
 		}
 	else if(Health2<=0)
 	{
 		global.mode = "postCombat"
 		wins1++;
+		audio_play_sound(bakra_die, 100, 0);
 	}
 		
 	
