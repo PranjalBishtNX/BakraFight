@@ -10,7 +10,10 @@
         "3c9cf980-384a-4a2f-845d-2e95656df65e",
         "aafb57d3-7c4e-4f14-8319-08716aed3430",
         "2a483e33-ae0a-464e-b6d9-50386673379f",
-        "b7be534e-6e5b-4c8c-ac87-98787f17fe6f"
+        "b7be534e-6e5b-4c8c-ac87-98787f17fe6f",
+        "155625a1-965d-4bb1-b13a-254411d1df8e",
+        "5d7ca593-1ae0-4a16-8f06-9e0d9464e3f3",
+        "14bfdd89-2270-41ca-9682-5e10dd7cdd77"
     ],
     "filterType": "GMSprite",
     "folderName": "Goats",

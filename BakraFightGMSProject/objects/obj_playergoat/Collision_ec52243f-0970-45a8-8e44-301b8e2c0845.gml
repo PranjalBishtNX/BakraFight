@@ -1,5 +1,5 @@
-if(x<32) x = 32;
-if(x>room_width-32) x = room_width-32;
+if(x<-48) x = room_width+48;
+if(x>room_width+48) x = -48
 		
 //if(x<room_width/2)
 //x = x+bashSpeed;

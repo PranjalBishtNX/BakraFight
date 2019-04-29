@@ -15,12 +15,12 @@ hp = 100;
 isHit = false;
 knockBck = 5;
 jumpAtkUsed = false;
-image_xscale = -image_xscale;
 minCritCards = 3;
 critChance = 3;
 
 
-recoilSpeed = 20;
+
+
 
 
 
@@ -33,3 +33,5 @@ recoilSpeed = 20;
 antFrames = 3;  //number of anticipation frames in bash
 justLanded = 0;
 hurtTime = 20;
+
+image_xscale = -image_xscale;

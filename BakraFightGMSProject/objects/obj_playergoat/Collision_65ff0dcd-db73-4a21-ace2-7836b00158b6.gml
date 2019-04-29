@@ -4,9 +4,9 @@ other.playerOnLeft = sign(other.x-x);
 
 if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not in anticipation frames)
 {
-	state="normal";
+	state="normal";							//stop the attack and recoil, always
 	x = x - playerOnLeft * bashSpeed/2;
-	hmov = -playerOnLeft * bashSpeed/2;
+	hmov = -playerOnLeft * bashSpeed/2;  
 	
 	if(other.state == "attack" && other.image_index>=antFrames) //no damamge  //make sure he's not in anticipation phase of attack
 	{
@@ -15,6 +15,7 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 			state = "normal";
 			x = x + playerOnLeft*bashSpeed/2;
 			hmov = playerOnLeft*bashSpeed/2;
+			instance_create_layer(0,0,"UI",obj_screenShake);  //shake screen when both collide charging
 			
 		}
 	} else{
@@ -24,6 +25,9 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 			x = x + playerOnLeft*bashSpeed;
 			hmov = playerOnLeft*bashSpeed;	
 			hp = hp - obj_playergoat.atkDmg; //attack damage
+			
+			ss = instance_create_layer(0,0,"UI",obj_screenShake); //shake!
+			ss.shake_amount+= obj_playergoat.atkDmg*0.2;  //increase screenshake slightly with damage
 
 			state = "hurt";
 			alarm_set(3,hurtTime);
@@ -54,8 +58,10 @@ else //player is not charging
 		
 		
 		
-		hp = hp - obj_enemygoat.atkDmg; //attack damage
-
+		hp = hp - obj_enemygoat.atkDmg; //player takes attack damage  
+		
+		ss = instance_create_layer(0,0,"UI",obj_screenShake);  //screen shake
+		ss.shake_amount+= obj_enemygoat.atkDmg*0.2;
 		state = "hurt";
 		alarm_set(3,hurtTime);
 

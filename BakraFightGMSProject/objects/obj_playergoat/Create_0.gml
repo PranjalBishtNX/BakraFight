@@ -19,8 +19,6 @@ minCritCards = 3;
 critChance = 3;
 
 
-recoilSpeed = 20;
-
 
 
 

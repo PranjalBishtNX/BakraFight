@@ -46,10 +46,10 @@ if(global.mode=="combat")
 
 	y = y + vmov;
 
-
+	//attack/anticipation
 	if (key_attack && canAttack  && state!="hurt")
 	{
-	 if(state=="jump" && !jumpAtkUsed)
+	 if(state=="jump" && !jumpAtkUsed)  //able to attack once during a jump
 	 {
 		 jumpAtkUsed = true;
 		 state = "attack"
@@ -57,7 +57,7 @@ if(global.mode=="combat")
 		 alarm_set(0, atkTime)
 		 canAttack = false;
 	 }
-	 else if(state == "normal")
+	 else if(state == "normal")  //attack on ground
 	 {
 		  jumpAtkUsed = false;
 		 state = "attack"
@@ -76,6 +76,12 @@ if(global.mode=="combat")
 			hmov = -bashSpeed;
 			
 		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
+		
+		if(image_index==antFrames && atkDmg>60) // when damamge is very high do a shake
+		{
+			ss = instance_create_layer(0,0,"UI",obj_screenShake);
+			ss.y_multiplier = 0;
+		}
 	}
 
 	//if (place_meeting(x,y,obj_end))

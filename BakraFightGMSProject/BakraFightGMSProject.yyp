@@ -63,6 +63,22 @@
             }
         },
         {
+            "Key": "14bfdd89-2270-41ca-9682-5e10dd7cdd77",
+            "Value": {
+                "id": "d1e63539-8c4a-4228-9b16-70355d1c92a5",
+                "resourcePath": "sprites\\spr_bluegoat_hurt\\spr_bluegoat_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "155625a1-965d-4bb1-b13a-254411d1df8e",
+            "Value": {
+                "id": "17302335-b2cb-4eb2-af59-25c7090ac035",
+                "resourcePath": "sprites\\spr_bluegoat_jumpFall\\spr_bluegoat_jumpFall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15717ee1-add9-49b9-bfe3-3d56617264e0",
             "Value": {
                 "id": "843f4e54-4257-42ba-8ee5-b9116d7bd5ea",
@@ -90,7 +106,7 @@
             "Key": "2a483e33-ae0a-464e-b6d9-50386673379f",
             "Value": {
                 "id": "b6a9db8f-5bae-44a0-aa9d-68949e096a95",
-                "resourcePath": "sprites\\spr_bluegoat_charge\\spr_bluegoat_charge.yy",
+                "resourcePath": "sprites\\spr_bluegoat_dash\\spr_bluegoat_dash.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -179,6 +195,14 @@
             "Value": {
                 "id": "2fc70720-2190-4937-b2d0-0d319e6ec297",
                 "resourcePath": "sprites\\spr_playergoat\\spr_playergoat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5d7ca593-1ae0-4a16-8f06-9e0d9464e3f3",
+            "Value": {
+                "id": "4b90d41c-f209-42be-abf7-c0ad3939f71e",
+                "resourcePath": "sprites\\spr_bluegoat_death\\spr_bluegoat_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -370,7 +394,7 @@
             "Key": "abf96484-e3ab-4051-81b6-d8b8a970d7c3",
             "Value": {
                 "id": "8760d7e4-78e5-458b-9aa3-c9ca91d7cfaa",
-                "resourcePath": "scripts\\scr_setHP\\scr_setHP.yy",
+                "resourcePath": "scripts\\scr_screenshake\\scr_screenshake.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -447,11 +471,27 @@
             }
         },
         {
+            "Key": "cbe2d7f6-e583-4dc2-8dbb-f4e6c29bb244",
+            "Value": {
+                "id": "15011b13-1401-4d9b-9303-16c2511c2df4",
+                "resourcePath": "shaders\\sh_Flash\\sh_Flash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e02966b8-dd18-453b-bc9c-6aebd6beebaa",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "dfdb9b7c-c83d-4d01-891d-2efce2f1be19",
+            "Value": {
+                "id": "4cfbfd44-1865-4d25-b5a3-52382b799da4",
+                "resourcePath": "objects\\obj_screenShake\\obj_screenShake.yy",
+                "resourceType": "GMObject"
             }
         },
         {
