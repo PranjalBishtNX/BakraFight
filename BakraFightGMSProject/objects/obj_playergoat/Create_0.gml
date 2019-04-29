@@ -32,3 +32,4 @@ critChance = 3;
 antFrames = 3;  //number of anticipation frames in bash
 justLanded = 0;
 hurtTime = 20;
+

@@ -38,7 +38,13 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 				if (random_range(0,100) <= obj_playergoat.critChance)
 				{
 						hp = hp - obj_playergoat.critdmg;
-						
+						t = instance_create_layer(x, y, "UI_Feedback", obj_TextFeedback);
+						t.textToDraw = "CRIT!";
+						t.col = make_color_rgb(235,69,47);	
+						ss.shake_amount+=obj_playergoat.atkDmg*0.2
+						//freeze
+						obj_UIController.freezeFrame = true;
+						 
 				}
 			
 			}

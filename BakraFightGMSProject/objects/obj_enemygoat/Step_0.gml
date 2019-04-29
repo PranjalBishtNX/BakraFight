@@ -4,7 +4,7 @@ if(global.mode == "combat")
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_up);
-key_attack = keyboard_check_pressed(vk_numpad0);
+key_attack = keyboard_check_pressed(vk_rshift);
 
 	move=0
 	//move
@@ -85,11 +85,6 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 		}
 	}
 
-	//if (place_meeting(x,y,obj_end))
-	//	while (!place_meeting(x+sign(x),y,obj_end))
-	//	{
-	//		x = x + sign(x)
-	//	}
 	x = x + hmov;  //TO Final NEXT X ONCE ALL CALCS ARE DONE
 
 	
@@ -147,14 +142,16 @@ key_attack = keyboard_check_pressed(vk_numpad0);
 
 if(global.mode =="postCombat")
 {
-	if(hp<=0)
+	if(hp>0)
+	{
+		
+		image_speed = 1;
+		sprite_index = spr_bluegoat;
+	}
+	else if(state = "dead")
 	{
 		image_speed = 0;
 		sprite_index = spr_bluegoat_death;
 	}
-	else
-	{
-		image_speed = 1;
-		sprite_index = spr_bluegoat;
-	}
+
 }

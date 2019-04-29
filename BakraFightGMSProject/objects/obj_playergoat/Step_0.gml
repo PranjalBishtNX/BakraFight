@@ -154,14 +154,31 @@ if(global.mode=="combat")
 
 if(global.mode =="postCombat")
 {
-	if(hp<=0)
+	if(hp>0)
+	{
+		
+		image_speed = 1;
+		sprite_index = spr_playergoat;
+	}
+	else if(state = "dead")
 	{
 		image_speed = 0;
 		sprite_index = spr_playergoat_death;
 	}
-	else
+	vmov = vmov + grv;
+	if (place_meeting(x,y+vmov,obj_ground))
 	{
-		image_speed = 1;
-		sprite_index = spr_playergoat;
+			if (state == "jump")
+			{
+				state = "normal";
+				jumpAtkUsed = false;
+				justLanded = 3;
+			}
+			while (!place_meeting(x,y+sign(vmov),obj_ground))
+			{
+				y = y + sign(vmov);
+			}	
+			vmov = 0;
 	}
+	y = y + vmov;
 }

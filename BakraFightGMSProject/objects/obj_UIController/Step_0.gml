@@ -34,6 +34,13 @@ else if(global.mode == "combat")
 	}
 		
 	
+	if(freezeFrame)
+	{
+		time = current_time;  
+		while (current_time-time < 200) { } //infinite loop
+		freezeFrame = false;
+	}
+	
 }
 else if(global.mode == "postCombat")
 {

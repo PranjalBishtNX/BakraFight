@@ -16,3 +16,8 @@ p1Stats = [0,0,0]
 p2Stats = [0,0,0]
 
 dist = 64  //dist b/w top icons
+
+freezeFrame = false;
+
+
+instance_create_layer(room_width/2, 866, "UI_Feedback", obj_menuPrompt);

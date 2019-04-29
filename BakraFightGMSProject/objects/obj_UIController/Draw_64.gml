@@ -1,6 +1,7 @@
 if(global.mode == "gameStart")
 {
 	//menu stuff
+	draw_sprite(UI_Menu,0,0,0);
 }
 
 else

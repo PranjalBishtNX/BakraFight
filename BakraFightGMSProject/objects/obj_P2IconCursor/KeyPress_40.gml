@@ -8,4 +8,8 @@ if(obj_UIController.p2Stats[pos]>0  && global.mode == "preCombat"){
 	
 	instance_create_layer(tX, y, "UI_Feedback", obj_SelectFeedback)
 	
+	t = instance_create_layer(tX, y, "UI_Feedback", obj_TextFeedback);
+	t.textToDraw = "Life +10!";
+	t.col = make_color_rgb(150, 255, 130);
+	
 }
