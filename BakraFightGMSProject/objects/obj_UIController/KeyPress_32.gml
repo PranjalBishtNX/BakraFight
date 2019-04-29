@@ -1,6 +1,7 @@
 if(global.mode = "gameStart")
 {
 	global.mode = "preCombat"
+	audio_play_sound(bakra_fight,1,1)
 	
 }
 

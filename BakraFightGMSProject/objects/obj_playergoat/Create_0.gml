@@ -27,7 +27,6 @@ critChance = 3;
 
 
 
-
 //animation stuff
 antFrames = 3;  //number of anticipation frames in bash
 justLanded = 0;

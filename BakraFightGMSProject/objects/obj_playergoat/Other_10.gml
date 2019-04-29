@@ -9,3 +9,4 @@ if (critdmg <= 0) critdmg = 0
 
 critChance = 5*(obj_UIController.p1Stats[2] - minCritCards);
 if (critChance <= 0) critChance= 0;
+

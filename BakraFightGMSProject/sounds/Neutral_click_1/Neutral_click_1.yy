@@ -1,9 +1,9 @@
 {
-    "id": "d6d1764c-15e0-46d3-b24a-ff7a258f6dd9",
+    "id": "6de3948a-e83b-4fdd-abec-5ada6ac58771",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "Devil_VO",
-    "audioGroupGuid": "e7d1e677-0275-4e25-9402-3ff3f19dfbb9",
+    "name": "Neutral_click_1",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "04f0be10-6de4-44b0-8311-509f209fb264",
+            "Value": {
+                "id": "e8da7bc1-5a97-4c75-a9af-91536ec826e6",
+                "resourcePath": "sounds\\collision\\collision.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "077ade2a-3d44-45db-8bc7-443443b8504f",
             "Value": {
                 "id": "ac05bace-c2a4-4a14-bdc9-e1f0fb32c6a4",
@@ -164,6 +172,14 @@
                 "id": "cb313824-5508-42c2-b7a2-c9baa374d76d",
                 "resourcePath": "rooms\\CombatRoom\\CombatRoom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "3810193f-0ce9-420b-81fe-28fadfcc90f3",
+            "Value": {
+                "id": "27de4283-fc01-4389-80cd-5e3473e925d5",
+                "resourcePath": "sounds\\bakra_1\\bakra_1.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -343,6 +359,14 @@
             }
         },
         {
+            "Key": "6de3948a-e83b-4fdd-abec-5ada6ac58771",
+            "Value": {
+                "id": "12908e33-0e96-45eb-99d8-be76ed1bb107",
+                "resourcePath": "sounds\\Neutral_click_1\\Neutral_click_1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "72cf005c-22ed-4b7f-bfaa-aeef8741191f",
             "Value": {
                 "id": "55d2f9ee-8211-4d9d-ae51-5dc49d736531",
@@ -415,6 +439,14 @@
             }
         },
         {
+            "Key": "84f1e876-7d34-48a3-b439-d5bbc7496587",
+            "Value": {
+                "id": "30a4b784-ade8-4c89-bdb8-56dc12d9a86e",
+                "resourcePath": "sounds\\bakra_hurt\\bakra_hurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8c328c4b-cc3c-4c21-b143-b228f42510ce",
             "Value": {
                 "id": "f06319b8-e8f7-4c82-9944-8b259729f354",
@@ -476,6 +508,14 @@
                 "id": "4cd6fb15-2a15-4be6-85f4-5f92f5d77b5b",
                 "resourcePath": "sprites\\spr_playergoat_death\\spr_playergoat_death.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ab9a6535-79eb-461e-baa1-a1d95517aa15",
+            "Value": {
+                "id": "f10f440e-a2a7-4b88-b9dc-eac6261b4032",
+                "resourcePath": "sounds\\bakra_die\\bakra_die.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -603,6 +643,14 @@
             "Value": {
                 "id": "11a4ca27-340c-46de-9e02-df234d903fc0",
                 "resourcePath": "sounds\\Devil_VO\\Devil_VO.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d8bc2579-fab6-464b-8b15-376751c0b17a",
+            "Value": {
+                "id": "7530c92f-0257-4801-87a9-9459c3f420d2",
+                "resourcePath": "sounds\\neutral_click_2\\neutral_click_2.yy",
                 "resourceType": "GMSound"
             }
         },

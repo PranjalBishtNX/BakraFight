@@ -1,9 +1,9 @@
 {
-    "id": "d6d1764c-15e0-46d3-b24a-ff7a258f6dd9",
+    "id": "04f0be10-6de4-44b0-8311-509f209fb264",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "Devil_VO",
-    "audioGroupGuid": "e7d1e677-0275-4e25-9402-3ff3f19dfbb9",
+    "name": "collision",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

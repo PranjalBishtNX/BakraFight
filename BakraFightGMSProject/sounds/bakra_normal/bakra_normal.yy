@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "bakra_normal",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "8721e9aa-a6ae-4e80-93fe-30ba5f78f67f",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
