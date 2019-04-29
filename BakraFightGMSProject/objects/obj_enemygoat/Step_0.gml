@@ -31,10 +31,10 @@ key_attack = keyboard_check_pressed(vk_rshift);
 	//gravity
 	if (place_meeting(x,y+vmov,obj_ground))
 	{
+			jumpAtkUsed = false;
 			if (state == "jump")
-			{
+			{	
 				state = "normal";
-				jumpAtkUsed = false;
 				justLanded = 3;
 			}
 			while (!place_meeting(x,y+sign(vmov),obj_ground))
@@ -71,11 +71,18 @@ key_attack = keyboard_check_pressed(vk_rshift);
 	{
 		vmov = 0;
 		if(image_xscale>0)
+		{
 			hmov = bashSpeed;
-		else
+			vmov = bashSpeed
+			}
+		else{
 			hmov = -bashSpeed;
+			vmov = bashSpeed
+			}
 			
-		if(image_index<antFrames) hmov = 0; //first few anticipation frames of bash are static
+		if(image_index<antFrames) {
+			hmov = 0;
+			vmov = 0}//first few anticipation frames of bash are static
 		
 		if(image_index==antFrames && atkDmg>60)  // when damamge is very high do a shake
 		{

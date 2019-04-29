@@ -1,0 +1,1 @@
+audio_play_sound(bakra_fight, 1000, 1);
