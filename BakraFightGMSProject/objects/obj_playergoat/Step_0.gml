@@ -32,10 +32,10 @@ if(global.mode=="combat")
 	//gravity
 	if (place_meeting(x,y+vmov,obj_ground))
 	{
+		jumpAtkUsed = false;
 			if (state == "jump")
 			{
 				state = "normal";
-				jumpAtkUsed = false;
 				justLanded = 3;
 			}
 			while (!place_meeting(x,y+sign(vmov),obj_ground))

@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "431e8444-f772-4855-92dd-cfb8eb4fbd2a",
+            "Value": {
+                "id": "3038b3b8-e4c4-415c-a290-82429464d474",
+                "resourcePath": "objects\\obj_gameSound\\obj_gameSound.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4722c20b-08aa-440e-bd24-2f43cf009984",
             "Value": {
                 "id": "af1d0f56-816b-4a0b-9bfc-e25492123f03",
@@ -284,6 +292,22 @@
                 "id": "6db3ed87-4be0-4ab3-8014-3002f5565e92",
                 "resourcePath": "views\\67772687-94e6-4bfd-b39a-674442cb0f56.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "68c2c999-96dc-4f3e-8901-7a99919480f9",
+            "Value": {
+                "id": "efacc13e-139e-4ebb-b433-57033bb403b8",
+                "resourcePath": "sounds\\bakra_fight\\bakra_fight.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6a5189b1-b7aa-43eb-b61c-67beca5ecdb6",
+            "Value": {
+                "id": "dc45cc0b-6c7f-4368-9538-b6c1e4dc4980",
+                "resourcePath": "sounds\\bakra_normal\\bakra_normal.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -548,6 +572,14 @@
                 "id": "e02966b8-dd18-453b-bc9c-6aebd6beebaa",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d6d1764c-15e0-46d3-b24a-ff7a258f6dd9",
+            "Value": {
+                "id": "11a4ca27-340c-46de-9e02-df234d903fc0",
+                "resourcePath": "sounds\\Devil_VO\\Devil_VO.yy",
+                "resourceType": "GMSound"
             }
         },
         {
