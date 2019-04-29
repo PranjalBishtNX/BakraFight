@@ -44,5 +44,7 @@ else if(global.mode == "combat")
 }
 else if(global.mode == "postCombat")
 {
+	if(reAllowTimer>0) reAllowTimer--;
+	else restartAllowed = true;
 	//do postCombatStuff
 }

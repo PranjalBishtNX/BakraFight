@@ -33,6 +33,8 @@ else
 		}
 	}
 }
+
+
 if(global.mode == "preCombat")
 {
 	draw_set_font(AGothicBig)
@@ -42,7 +44,8 @@ if(global.mode == "preCombat")
 	else
 		draw_text(room_width*0.5, y + 128, string("FIGHT!"));
 
-} else if(global.mode == "postCombat"){
+} 
+else if(global.mode == "postCombat"){
 	draw_set_font(AGothicBig)
 	if(Health1<=0)
 		draw_text(room_width*0.5, y + 512, "GOAT 2 WINS!");
