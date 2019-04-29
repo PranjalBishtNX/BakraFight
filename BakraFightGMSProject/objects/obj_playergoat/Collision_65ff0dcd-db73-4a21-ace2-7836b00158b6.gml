@@ -38,11 +38,13 @@ if(state=="attack" && image_index>antFrames)  //i.e. player is charging(and not 
 				if (random_range(0,100) <= obj_playergoat.critChance)
 				{
 						hp = hp - obj_playergoat.critdmg;
+						//fancy fx
 						t = instance_create_layer(x, y, "UI_Feedback", obj_TextFeedback);
 						t.textToDraw = "CRIT!";
 						t.col = make_color_rgb(235,69,47);	
 						ss.shake_amount+=obj_playergoat.atkDmg*0.2
 						//freeze
+						//sprite_index = spr_bluegoat_hurt;
 						obj_UIController.freezeFrame = true;
 						 
 				}
@@ -78,7 +80,15 @@ else //player is not charging
 				if (random_range(0,100) <= obj_enemygoat.critChance)
 				{
 						hp = hp - obj_enemygoat.critdmg;
-						
+					
+						//fancy fx
+						t = instance_create_layer(x, y, "UI_Feedback", obj_TextFeedback);
+						t.textToDraw = "CRIT!";
+						t.col = make_color_rgb(235,69,47);	
+						ss.shake_amount+=obj_enemygoat.atkDmg*0.2
+						//freeze
+						//sprite_index = spr_playergoat_hurt;
+						obj_UIController.freezeFrame = true;
 				}
 			
 			}

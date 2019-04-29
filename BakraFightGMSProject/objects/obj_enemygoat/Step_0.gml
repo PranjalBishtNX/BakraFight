@@ -4,7 +4,11 @@ if(global.mode == "combat")
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_up);
-key_attack = keyboard_check_pressed(vk_rshift);
+key_attack = (keyboard_check_pressed(vk_rshift) || keyboard_check_pressed(vk_numpad0));
+
+
+
+
 
 	move=0
 	//move
@@ -153,5 +157,20 @@ if(global.mode =="postCombat")
 		image_speed = 0;
 		sprite_index = spr_bluegoat_death;
 	}
-
+	vmov = vmov + grv;
+	if (place_meeting(x,y+vmov,obj_ground))
+	{
+			if (state == "jump")
+			{
+				state = "normal";
+				jumpAtkUsed = false;
+				justLanded = 3;
+			}
+			while (!place_meeting(x,y+sign(vmov),obj_ground))
+			{
+				y = y + sign(vmov);
+			}	
+			vmov = 0;
+	}
+	y = y + vmov;
 }
