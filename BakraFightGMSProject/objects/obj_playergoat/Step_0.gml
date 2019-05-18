@@ -6,7 +6,7 @@ if(global.mode=="combat")
 	key_jump = keyboard_check_pressed(ord("W"));
 	key_attack = keyboard_check_pressed(vk_space);
 
-	move = key_right - key_left;
+	move = key_right - key_left; //just checking
 	//move
 	if(state!="attack"){
 		

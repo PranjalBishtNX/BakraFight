@@ -17,7 +17,7 @@ jumpAtkUsed = false;
 minCritCards = 3;
 critChance = 3;
 
-
+//just checking
 
 
 
